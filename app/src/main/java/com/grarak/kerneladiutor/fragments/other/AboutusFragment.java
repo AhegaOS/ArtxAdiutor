@@ -30,9 +30,9 @@ import com.grarak.kerneladiutor.utils.Utils;
  */
 public class AboutusFragment extends RecyclerViewFragment {
 
-    private final String APP_SOURCE = "https://github.com/yoinx/kernel_adiutor/";
-    private final String ISSUE_LINK = "https://github.com/yoinx/kernel_adiutor/issues";
-    private final String DONATION_LINK = "https://www.paypal.com/paypalme/JosephSchubert";
+    private final String APP_SOURCE = "https://github.com/Artx-II/ArtxAdiutor/";
+    private final String ISSUE_LINK = "https://github.com/Artx-II/ArtxAdiutor/issues";
+    private final String DONATION_LINK = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=78KM4LJXDVC6C";
     private final String GOOGLE_PLUS_LINK = "https://plus.google.com/communities/103764146519204710337";
 
     @Override
