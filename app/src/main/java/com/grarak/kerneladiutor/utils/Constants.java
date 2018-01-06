@@ -604,8 +604,8 @@ public interface Constants {
 
     // LCD Backlight
     String LM3530_BRIGTHNESS_MODE = "/sys/devices/i2c-0/0-0038/lm3530_br_mode";
-    String LM3530_MIN_BRIGHTNESS = "/sys/devices/i2c-0/0-0038/lm3530_min_br";
-    String LM3530_MAX_BRIGHTNESS = "/sys/devices/i2c-0/0-0038/lm3530_max_br";
+    String LM3530_MIN_BRIGHTNESS = "/sys/module/lm3697/parameters/lm3697_max_backlight";
+    String LM3530_MAX_BRIGHTNESS = "/sys/module/lm3697/parameters/lm3697_min_backlight";
 
     String ZE551ML_MIN_BRIGHTNESS = "/sys/class/backlight/psb-bl/min_brightness";
     String ZE551ML_MAX_BRIGHTNESS = "/sys/class/backlight/psb-bl/max_brightness";

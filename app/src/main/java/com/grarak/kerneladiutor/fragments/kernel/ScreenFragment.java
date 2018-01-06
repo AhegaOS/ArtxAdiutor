@@ -643,9 +643,9 @@ public class ScreenFragment extends RecyclerViewFragment implements SeekBarCardV
             views.add(mBrightnessModeCard);
         }
 
-        if (Screen.hasLcdMinBrightness()) {
+        if (Screen.hasLcdMaxBrightness()) {
             List<String> list = new ArrayList<>();
-            for (int i = 2; i < 115; i++)
+            for (int i = 2; i < 2048; i++)
                 list.add(String.valueOf(i));
 
             mLcdMinBrightnessCard = new SeekBarCardView.DSeekBarCard(list);
@@ -657,9 +657,9 @@ public class ScreenFragment extends RecyclerViewFragment implements SeekBarCardV
             views.add(mLcdMinBrightnessCard);
         }
 
-        if (Screen.hasLcdMaxBrightness()) {
+        if (Screen.hasLcdMinBrightness()) {
             List<String> list = new ArrayList<>();
-            for (int i = 2; i < 115; i++)
+            for (int i = 2; i < 2048; i++)
                 list.add(String.valueOf(i));
 
             mLcdMaxBrightnessCard = new SeekBarCardView.DSeekBarCard(list);

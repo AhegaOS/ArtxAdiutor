@@ -142,7 +142,7 @@ public class BatteryFragment extends RecyclerViewFragment implements SwitchCardV
 
         if(Battery.hasForceFastChargeCurrent()){
             List<String> list = new ArrayList<>();
-            for (int i = 0; i < 2500; i+=100) list.add(String.valueOf(i));
+            for (int i = 1000; i < 2500; i+=100) list.add(String.valueOf(i));
 
             mForceFastChargeCurrentCard = new SeekBarCardView.DSeekBarCard(list);
             mForceFastChargeCurrentCard.setTitle(getString(R.string.usb_fast_charge_current));
@@ -154,7 +154,7 @@ public class BatteryFragment extends RecyclerViewFragment implements SwitchCardV
 
 	 if(Battery.hasForceFastChargeUSBCurrent()){
             List<String> list = new ArrayList<>();
-            for (int i = 0; i < 1600; i+=100) list.add(String.valueOf(i));
+            for (int i = 500; i < 1600; i+=100) list.add(String.valueOf(i));
 
             mForceFastChargeUSBCurrentCard = new SeekBarCardView.DSeekBarCard(list);
             mForceFastChargeUSBCurrentCard.setTitle(getString(R.string.usb_fast_charge_usb_current));
